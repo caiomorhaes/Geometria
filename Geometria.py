@@ -81,16 +81,50 @@ def circulo():
         if escolha == 1:
             area = pi*(raio*raio)
             print()
-            print(f'O raio deste trinângulo será de {area}')
+            print(f'A area deste circulo será de {area}')
         elif escolha == 2:
             comprimento = 2*pi*raio
             print()
-            print(f'O comprimento deste triângulo será de {comprimento}')
+            print(f'O comprimento deste circulo será de {comprimento}')
         elif escolha == 3:
             break
 
 
 
+def losango():
+    print()
+    diagmaior = int(input("Insira a diagonal maior deste losango: "))
+    diagmenor = int(input("Insira a diagonal menor deste losango: "))
+    while True:
+        print()
+        print('-----Escolha um calculo-----')
+        print('1 - Area')
+        print('2 - Sair')
+        escolha = int(input("Escolha: "))
+        if escolha == 1:
+            area = (diagmaior*diagmenor)/2
+            print(f"A area deste losango é de {area}")
+        elif escolha == 2:
+            break
+
+
+def trapezio():
+    print()
+    basemaior = int(input("Insira a base maior deste trapezio: "))
+    basemenor = int(input("insira a base menor deste trapezio: "))
+    altura = int(input("insira a altura deste trapezio: "))
+    while True:
+        print()
+        print('-----Escolha um calculo-----')
+        print('1 - Area')
+        print('2 - Sair')
+        escolha = int(input("Escolha: "))
+        if escolha == 1:
+            area = ((basemaior+basemenor)*altura)/2
+            print(f"A area deste trapezio é de {area}")
+
+        elif escolha == 2:
+            break
 
 
 def inicio():
@@ -110,4 +144,3 @@ def inicio():
 
 
 inicio()
-
